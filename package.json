@@ -5,6 +5,7 @@
   "author": "John Smalley <john.m.smalley@gmail.com",
   "dependencies": {
     "express": "4.14.x",
-    "mongoose": "4.5.x"
+    "mongoose": "4.5.x",
+    "body-parser": "1.15.x"
   }
 }
