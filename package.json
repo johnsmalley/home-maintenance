@@ -1,0 +1,10 @@
+{
+  "name": "home-maintenance",
+  "version": "0.0.0",
+  "description": "An application used for home maintenance reminders",
+  "author": "John Smalley <john.m.smalley@gmail.com",
+  "dependencies": {
+    "express": "4.14.x",
+    "mongoose": "4.5.x"
+  }
+}
