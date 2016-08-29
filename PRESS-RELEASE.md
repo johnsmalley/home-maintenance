@@ -42,7 +42,7 @@ Once the project moves into development, the press release can be used as a touc
   > visit https://home-maintenance.herokuapp.com/ to start using
 
 ## Customer Quote ##
-  This product really helps me prevent forgetting about a maintenance item.
+  > This product really helps me prevent forgetting about a maintenance item.
 
 ## Closing and Call to Action ##
   > If you have a need, then vist https://home-maintenance.herokuapp.com/ to get
