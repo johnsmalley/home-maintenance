@@ -5,7 +5,7 @@ var create = require('./server/tasks/taskController.js')
 var app = express();
 
 // connect to mongo database
-mongoose.connect('mongodb://localhost/tasks');
+mongoose.connect(process.env.MONGODB_URI|| 'mongodb://localhost/tasks');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function() {
