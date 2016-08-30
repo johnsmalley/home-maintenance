@@ -43,7 +43,11 @@ ul {
 }
 
 .overDue {
-  background-color: #ff6666;
+  background-color: #ffb3b3;
+}
+
+.comingDue {
+  background-color: #ffffcc;
 }
 
 input, textarea, button {

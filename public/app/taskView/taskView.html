@@ -2,7 +2,8 @@
   <h1>Upcoming Home Maintenance Tasks</h1>
 
   <ul>
-    <li class="tasks" ng-class="{overDue: (currentDate > task.due)}" ng-repeat="task in tasks | orderBy: 'due'">
+    <li class="tasks" ng-class="{overDue: (currentDate > task.due),
+      comingDue: (sevenDaysFuture > task.due && currentDate < task.due)}" ng-repeat="task in tasks | orderBy: 'due'">
       <button ng-click="deleteTask(task)">Delete Task</button>
       <div><span class="header">Title: </span>{{task.title}}</div>
       <div><span class="header">Equipment: </span>{{task.equipment}}</div>
