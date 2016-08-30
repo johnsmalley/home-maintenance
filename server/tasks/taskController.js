@@ -16,7 +16,7 @@ module.exports = {
       if (error) {
         throw error;
       } else {
-        console.log('created task: ', task);
+        res.send(task);
       }
     })
   }
