@@ -46,4 +46,7 @@ ul {
   background-color: #ff6666;
 }
 
+input, textarea, button {
+  font-size: 20px;
+}
 

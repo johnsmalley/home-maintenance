@@ -1,14 +1,16 @@
-<h1>In the Task Create html!!!</h1>
+<h1>Create a maintenance task below</h1>
 <div ng-controller="CreateController">
   <form name="createForm" novalidate ng-submit='addTask()'>
-    Title: <input type="text" ng-model="task.title" /><br />
-    Equipment: <input type="text" ng-model="task.equipment" /><br />
-    Due Date: <input  type="date"
-                      ng-model="task.due"
-                      placeholder="yyyy-MM-dd"
-                      min="2016-08-29"
-                      require /><br />
-    Description: <textarea  ng-model="task.description" ></textarea><br />
+    <div class="header">Title:</div>
+    <input type="text" ng-model="task.title" /><br />
+    <div class="header">Equipment:</div>
+    <input type="text" ng-model="task.equipment" /><br />
+    <div class="header">Due Date:</div>
+    <input  type="date"
+            ng-model="task.due"
+            placeholder="yyyy-MM-dd"
+            require /><br />
+    <div class="header">Description:</div><textarea  ng-model="task.description" ></textarea><br />
     <button>Submit</button>
   </form>
 
