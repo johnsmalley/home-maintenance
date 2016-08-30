@@ -21,3 +21,26 @@
 .nav li a:hover {
   background-color: #111;
 }
+
+ul {
+  padding: 0;
+}
+
+.tasks {
+  list-style-type: none;
+  margin-bottom: 15px;
+  background-color: #d9d9d9;
+
+}
+
+.tasks button{
+  float: right;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+

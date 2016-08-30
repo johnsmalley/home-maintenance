@@ -1,16 +1,15 @@
 <div ng-controller="ViewController">
   <h1>Upcoming Home Maintenance Tasks</h1>
-  <p>{{tasks}}</p>
-  <button ng-click="deleteTask()">delete</button>
+
   <ul>
-    <li ng-repeat="task in tasks | orderBy: 'due'">
-      <div>{{task.title}}</div>
-      <div>{{task.equipment}}</div>
-      <div>{{task.description}}</div>
-      <div>{{task.due}}</div>
-      <div>{{task.created}}</div>
-      <button ng-click="deleteTask(task)" ng-init="count= 0 ">Delete Task</button>
-      <div>{{count}}</div>
+    <li class="tasks" ng-repeat="task in tasks | orderBy: 'due'">
+      <button ng-click="deleteTask(task)">Delete Task</button>
+      <div><span class="header">Title: </span>{{task.title}}</div>
+      <div><span class="header">Equipment: </span>{{task.equipment}}</div>
+      <div><span class="header">Description: </span>{{task.description}}</div>
+      <div><span class="header">Due Date: </span>{{task.due | date:"MM/dd/yyyy"}}</div>
+      <div><span class="header">Created Date: </span>{{task.created | date: "MM/dd/yyyy"}}</div>
+
     </li>
   </ul>
 </div>
