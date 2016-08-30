@@ -1,5 +1,7 @@
 <div ng-controller="ViewController">
   <h1>Upcoming Home Maintenance Tasks</h1>
+  <p>{{tasks}}</p>
+  <button ng-click="deleteTask()">delete</button>
   <ul>
     <li ng-repeat="task in tasks">
       <div>{{task.title}}</div>
@@ -7,6 +9,8 @@
       <div>{{task.description}}</div>
       <div>{{task.due}}</div>
       <div>{{task.created}}</div>
+      <button ng-click="deleteTask(task)" ng-init="count= 0 ">Delete Task</button>
+      <div>{{count}}</div>
     </li>
   </ul>
 </div>

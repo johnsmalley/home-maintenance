@@ -33,5 +33,13 @@ module.exports = {
         console.log('failed to find all tasks');
         next(error);
       })
+  },
+
+  deleteTask: function (req, res, next) {
+    console.log('req body', req);
+    var id = String(req.body._id);
+    console.log('id: ', id);
+    Task.findByIdAndRemove(id, function() {
+    });
   }
 };
