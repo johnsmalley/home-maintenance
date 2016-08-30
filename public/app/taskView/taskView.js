@@ -1,6 +1,9 @@
 angular.module('maintenance.view', [])
 
 .controller('ViewController', function($scope, $http, $route) {
+  var date = new Date();
+  $scope.currentDate = date.toISOString();
+
   var getTasks = function() {
     $http({
       method: 'GET',
