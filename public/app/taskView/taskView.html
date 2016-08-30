@@ -3,7 +3,7 @@
   <p>{{tasks}}</p>
   <button ng-click="deleteTask()">delete</button>
   <ul>
-    <li ng-repeat="task in tasks">
+    <li ng-repeat="task in tasks | orderBy: 'due'">
       <div>{{task.title}}</div>
       <div>{{task.equipment}}</div>
       <div>{{task.description}}</div>
