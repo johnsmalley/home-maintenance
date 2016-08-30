@@ -1,6 +1,6 @@
 angular.module('maintenance.create', [])
 
-.controller('CreateControllers', function($scope, $http) {
+.controller('CreateController', function($scope, $http) {
   $scope.addTask = function () {
     console.log('about to add a task: ', $scope.task);
     return $http({
