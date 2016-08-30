@@ -36,10 +36,9 @@ module.exports = {
   },
 
   deleteTask: function (req, res, next) {
-    console.log('req body', req);
     var id = String(req.body._id);
-    console.log('id: ', id);
-    Task.findByIdAndRemove(id, function() {
+    Task.findByIdAndRemove(id, function(task) {
+      res.json(task);
     });
   }
 };
