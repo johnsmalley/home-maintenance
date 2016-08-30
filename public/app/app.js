@@ -10,4 +10,7 @@ angular.module('maintenance', [
     .when('/view', {
       templateUrl: 'app/taskView/taskView.html'
     })
+    .otherwise({
+      templateUrl: 'app/taskView/taskView.html'
+    })
 });
