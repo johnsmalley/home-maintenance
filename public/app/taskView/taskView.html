@@ -1,9 +1,12 @@
 <div ng-controller="ViewController">
   <h1>Upcoming Home Maintenance Tasks</h1>
-  <p>{{tasks}}</p>
   <ul>
-<!--     <li ng-repeat="">
-      <p>stuff</p>
-    </li> -->
+    <li ng-repeat="task in tasks">
+      <div>{{task.title}}</div>
+      <div>{{task.equipment}}</div>
+      <div>{{task.description}}</div>
+      <div>{{task.due}}</div>
+      <div>{{task.created}}</div>
+    </li>
   </ul>
 </div>
