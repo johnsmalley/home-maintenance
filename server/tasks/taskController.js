@@ -1,4 +1,7 @@
 var Task = require('./taskModel.js');
+var Q = require('q');
+
+var findAllTasks = Q.nbind(Task.find, Task);
 
 module.exports = {
   createTask: function (req, res, next) {
@@ -19,5 +22,16 @@ module.exports = {
         res.send(task);
       }
     })
+  },
+
+  viewTasks: function (req, res, next) {
+    findAllTasks({})
+      .then(function(tasks) {
+        res.json(tasks)
+      })
+      .fail(function (error) {
+        console.log('failed to find all tasks');
+        next(error);
+      })
   }
 };

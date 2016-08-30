@@ -20,6 +20,7 @@ app.get('/', function(req, res) {
 })
 
 app.post('/api/tasks', taskController.createTask);
+app.get('/api/tasks', taskController.viewTasks);
 
 var server = app.listen(process.env.PORT || 3000, function() {
   var port = server.address().port;
