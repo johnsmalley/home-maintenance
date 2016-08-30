@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="home-maintenance">
+<html lang="en" ng-app="maintenance">
   <head>
     <title>Home Maintenance</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -10,10 +10,16 @@
     <h3>Use this application to manage your home maintenance tasks</h3>
 
     <ul class="nav">
-      <li><a href="#">View Maintenance Tasks</a></li>
-      <li><a href="#">Create Maintenance Tasks</a></li>
+      <li><a href="#/view">View Maintenance Tasks</a></li>
+      <li><a href="#/create">Create Maintenance Tasks</a></li>
     </ul>
 
     <div ng-view></div>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+    <script src="app/taskCreate/taskCreate.js"></script>
+    <script src="app/app.js"></script>
   </body>
 </html>

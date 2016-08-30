@@ -1,0 +1,15 @@
+<h1>In the Task Create html!!!</h1>
+<div ng-controller="CreateControllers">
+  <form name="createForm" novalidate ng-submit='addTask()'>
+    Title: <input type="text" ng-model="task.title" /><br />
+    Equipment: <input type="text" ng-model="task.equipment" /><br />
+    Due Date: <input  type="date"
+                      ng-model="task.due"
+                      placeholder="yyyy-MM-dd"
+                      min="2016-08-29"
+                      require /><br />
+    Description: <textarea  ng-model="task.description" ></textarea><br />
+    <button>Submit</button>
+  </form>
+
+</div>
